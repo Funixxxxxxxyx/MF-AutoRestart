@@ -105,7 +105,7 @@ Use these variables to display countdown details in other plugins:
 
 ## Developer API & Custom Events
 
-A detailed reference manual for developers can be found in **[API.md](API.md)**.
+A detailed reference manual for developers can be found in **[API.md](https://fnx-plugins.gitbook.io/mf-autorestart/api)**.
 
 ---
 
