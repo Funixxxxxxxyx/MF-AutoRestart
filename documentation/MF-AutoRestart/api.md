@@ -1,6 +1,6 @@
 # Developer Java API & Custom Events
 
-aaaMF-AutoRestart provides a public Java API and custom Bukkit lifecycle events that allow other plugins to query the restart state, programmatically trigger/cancel restarts, or safely intercept server shutdowns.
+MF-AutoRestart provides a public Java API and custom Bukkit lifecycle events that allow other plugins to query the restart state, programmatically trigger/cancel restarts, or safely intercept server shutdowns.
 
 ---
 
