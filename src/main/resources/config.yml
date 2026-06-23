@@ -1,0 +1,78 @@
+# ================================================
+#           MF-AutoRestart Configuration
+#         github.com/funix/MF-AutoRestart
+# ================================================
+
+settings:
+  # Language for plugin messages. Available: en_us, en_id
+  language: en_us
+
+  # The timezone used for calculating scheduled restart times.
+  # Use IANA timezone IDs: Asia/Jakarta, America/New_York, Europe/London, UTC
+  # Shortcuts like WIB or GMT+7 are also accepted.
+  timezone: "Asia/Jakarta"
+
+  # The BungeeCord/Waterfall server name that players will be redirected to
+  # before the server restarts. Must match the name defined in BungeeCord's config.yml.
+  lobby-server: "lobby"
+
+  # Grace period in seconds to wait after sending BungeeCord redirection messages
+  # before kicking any players who were not successfully redirected.
+  # Minimum: 1 | Recommended: 3
+  redirection-grace-period: 3
+
+# --------------------------------------------------
+# Restart Schedules
+# --------------------------------------------------
+# Define automatic restart times. Two formats are supported:
+#   DAILY:<HH:mm>          — restarts every day at the given time
+#   WEEKLY:<DAY>:<HH:mm>   — restarts on the given day at the given time
+#
+# Days: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+# Time: 24-hour format HH:mm (e.g., 04:00, 14:30)
+#
+# Leave empty to disable automatic scheduling (use /ar start manually).
+schedules:
+  - "DAILY:07:00"
+  # - "WEEKLY:SUNDAY:12:00"
+
+# Default countdown duration in seconds when a scheduled restart is triggered.
+# Also used when running /ar start without specifying a duration.
+default-countdown: 300
+
+# --------------------------------------------------
+# Warning Broadcast Intervals
+# --------------------------------------------------
+# At these seconds remaining in the countdown, the plugin will broadcast
+# a warning message to all online players via Chat, Title, and ActionBar.
+warning-intervals:
+  - 300
+  - 180
+  - 120
+  - 60
+  - 30
+  - 10
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+
+# --------------------------------------------------
+# Pre-Restart Console Commands
+# --------------------------------------------------
+# Define console commands to be executed at specific seconds remaining.
+# Key: number of seconds remaining in the countdown (integer).
+# Value: list of commands to run (without the leading slash).
+# Available placeholder: %seconds% (remaining time as integer)
+#
+# These commands are executed on the main server thread.
+pre-restart-commands:
+  300:
+    - "save-all"
+  60:
+    - "broadcast &e[MF-AutoRestart] &fServer restart in &e60 seconds&f. Please prepare!"
+  30:
+    - "broadcast &e[MF-AutoRestart] &fServer restart in &e30 seconds&f!"
+  0:
+    - "broadcast &c[MF-AutoRestart] &fRestarting server now. Redirecting all players..."

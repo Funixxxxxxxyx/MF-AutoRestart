@@ -1,0 +1,56 @@
+# =====================================================
+#   MF-AutoRestart — Berkas Bahasa (Bahasa Indonesia)
+# =====================================================
+
+prefix: "<yellow><bold>MF-AutoRestart</bold></yellow> <green>/</green>"
+
+# ------------------------------------
+# Umum / Misc
+# ------------------------------------
+no_permission: "<prefix> <red>Kamu tidak memiliki izin untuk menggunakan perintah ini.</red>"
+player_only: "<prefix> <red>Perintah ini hanya dapat dijalankan oleh pemain.</red>"
+unknown_subcommand: "<prefix> <red>Sub-perintah tidak dikenal. Gunakan <yellow>/ar help</yellow> untuk daftar perintah.</red>"
+reload_success: "<prefix> <green>Konfigurasi dan berkas bahasa berhasil dimuat ulang.</green>"
+invalid_number: "<prefix> <red>Angka tidak valid: <yellow><input></yellow>. Masukkan bilangan bulat positif.</red>"
+
+# ------------------------------------
+# Peringatan Hitung Mundur (Siaran)
+# ------------------------------------
+warn_chat: "<prefix> <yellow>Server akan restart dalam <white><time></white>!"
+warn_title: "<yellow><bold>RESTART DALAM</bold></yellow>"
+warn_subtitle: "<white><time></white>"
+warn_actionbar: "<yellow>⚠ Server restart dalam <white><time></white> ⚠"
+
+# ------------------------------------
+# Urutan Restart
+# ------------------------------------
+restart_starting: "<prefix> <yellow>Proses restart server dimulai. Hitung mundur: <white><seconds>s</white>."
+restart_cancelled: "<prefix> <green>Hitung mundur restart telah dibatalkan."
+restart_not_active: "<prefix> <red>Tidak ada hitung mundur restart yang aktif untuk dibatalkan."
+restart_already_active: "<prefix> <red>Hitung mundur restart sedang berjalan. Batalkan dulu dengan <yellow>/ar cancel</yellow>."
+restart_redirecting: "<prefix> <yellow>Kamu sedang dipindahkan ke server lobby..."
+restart_kick_fallback: "<yellow>Server sedang restart. Silakan sambungkan kembali sebentar lagi!"
+
+# ------------------------------------
+# Perintah Status
+# ------------------------------------
+status_header: "<dark_gray>--- <yellow><bold>Status MF-AutoRestart</bold></yellow> <dark_gray>---"
+status_timezone: "<gray>Zona Waktu: <yellow><timezone>"
+status_countdown_active: "<gray>Hitung Mundur Aktif: <yellow>sisa <seconds>s"
+status_countdown_none: "<gray>Hitung Mundur Aktif: <green>Tidak ada (server stabil)"
+status_next_restart: "<gray>Jadwal Restart Berikutnya: <yellow><time> (<timezone>)"
+status_no_schedule: "<gray>Tidak ada jadwal otomatis yang dikonfigurasi."
+status_schedules_header: "<gray>Jadwal yang Dimuat:"
+status_schedule_entry: "  <dark_gray>» <yellow><type></yellow>: <white><value>"
+
+# ------------------------------------
+# Perintah Jadwal
+# ------------------------------------
+schedule_add_success: "<prefix> <green>Jadwal dinamis ditambahkan: <yellow><type></yellow> pada <yellow><time></yellow>."
+schedule_add_invalid_type: "<prefix> <red>Tipe tidak valid. Gunakan <yellow>daily</yellow> atau <yellow>weekly</yellow>."
+schedule_add_invalid_time: "<prefix> <red>Format waktu tidak valid. Gunakan <yellow>HH:mm</yellow> (contoh: 04:00)."
+schedule_add_invalid_day: "<prefix> <red>Hari tidak valid. Gunakan nama hari lengkap (contoh: <yellow>MINGGU</yellow>, <yellow>SENIN</yellow>)."
+schedule_add_missing_day: "<prefix> <red>Jadwal mingguan memerlukan argumen hari. Penggunaan: <yellow>/ar schedule add weekly <hari> <HH:mm></yellow>"
+schedule_list_header: "<dark_gray>--- <yellow>Jadwal Restart</yellow> <dark_gray>---"
+schedule_list_entry: "  <dark_gray>[<gray><index></gray>]</dark_gray> <yellow><type></yellow> <white><value> <dark_gray>(<origin>)"
+schedule_list_empty: "<prefix> <gray>Tidak ada jadwal yang saat ini dimuat."

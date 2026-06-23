@@ -1,0 +1,57 @@
+# =====================================================
+#   MF-AutoRestart — Language File (English US)
+# =====================================================
+
+prefix: "<yellow><bold>MF-AutoRestart</bold></yellow> <green>/</green>"
+
+# ------------------------------------
+# General / Misc
+# ------------------------------------
+no_permission: "<prefix> <red>You don't have permission to use this command.</red>"
+player_only: "<prefix> <red>This command can only be run by a player.</red>"
+unknown_subcommand: "<prefix> <red>Unknown subcommand. Use <yellow>/ar help</yellow> for a list of commands.</red>"
+reload_success: "<prefix> <green>Configuration and language files reloaded successfully.</green>"
+invalid_number: "<prefix> <red>Invalid number: <yellow><input></yellow>. Please enter a positive integer.</red>"
+
+# ------------------------------------
+# Countdown Warnings (Broadcast)
+# ------------------------------------
+# Placeholders: <seconds>, <minutes>
+warn_chat: "<prefix> <yellow>Server restarting in <white><time></white>!"
+warn_title: "<yellow><bold>RESTARTING IN</bold></yellow>"
+warn_subtitle: "<white><time></white>"
+warn_actionbar: "<yellow>⚠ Server restarting in <white><time></white> ⚠"
+
+# ------------------------------------
+# Restart Sequence
+# ------------------------------------
+restart_starting: "<prefix> <yellow>Server restart sequence initiated. Countdown: <white><seconds>s</white>."
+restart_cancelled: "<prefix> <green>Restart countdown has been cancelled."
+restart_not_active: "<prefix> <red>There is no active restart countdown to cancel."
+restart_already_active: "<prefix> <red>A restart countdown is already in progress. Cancel it first with <yellow>/ar cancel</yellow>."
+restart_redirecting: "<prefix> <yellow>Redirecting you to the lobby server..."
+restart_kick_fallback: "<yellow>Server is restarting. Please reconnect in a moment!"
+
+# ------------------------------------
+# Status Command
+# ------------------------------------
+status_header: "<dark_gray>--- <yellow><bold>MF-AutoRestart Status</bold></yellow> <dark_gray>---"
+status_timezone: "<gray>Timezone: <yellow><timezone>"
+status_countdown_active: "<gray>Active Countdown: <yellow><seconds>s remaining"
+status_countdown_none: "<gray>Active Countdown: <green>None (server stable)"
+status_next_restart: "<gray>Next Scheduled Restart: <yellow><time> (<timezone>)"
+status_no_schedule: "<gray>No automatic schedules configured."
+status_schedules_header: "<gray>Loaded Schedules:"
+status_schedule_entry: "  <dark_gray>» <yellow><type></yellow>: <white><value>"
+
+# ------------------------------------
+# Schedule Commands
+# ------------------------------------
+schedule_add_success: "<prefix> <green>Dynamic schedule added: <yellow><type></yellow> at <yellow><time></yellow>."
+schedule_add_invalid_type: "<prefix> <red>Invalid type. Use <yellow>daily</yellow> or <yellow>weekly</yellow>."
+schedule_add_invalid_time: "<prefix> <red>Invalid time format. Use <yellow>HH:mm</yellow> (e.g., 04:00)."
+schedule_add_invalid_day: "<prefix> <red>Invalid day. Use full day name (e.g., <yellow>SUNDAY</yellow>, <yellow>MONDAY</yellow>)."
+schedule_add_missing_day: "<prefix> <red>Weekly schedules require a day argument. Usage: <yellow>/ar schedule add weekly <day> <HH:mm></yellow>"
+schedule_list_header: "<dark_gray>--- <yellow>Scheduled Restarts</yellow> <dark_gray>---"
+schedule_list_entry: "  <dark_gray>[<gray><index></gray>]</dark_gray> <yellow><type></yellow> <white><value> <dark_gray>(<origin>)"
+schedule_list_empty: "<prefix> <gray>No schedules are currently loaded."

@@ -1,0 +1,28 @@
+name: MF-AutoRestart
+version: '${project.version}'
+main: id.funix.mFAutoRestart.MFAutoRestart
+api-version: '1.21'
+description: Safe auto-restart plugin with timezone-aware scheduling and BungeeCord player redirection.
+authors:
+  - Funix
+
+# Register the BungeeCord outgoing plugin messaging channel for player redirection
+softdepend: []
+
+libraries:
+  - org.xerial:sqlite-jdbc:3.45.3.0
+
+commands:
+  autorestart:
+    description: Main MF-AutoRestart command.
+    aliases: [ar, mfar]
+    permission: mfautorestart.admin
+    usage: /autorestart <status|start|cancel|schedule|reload>
+
+permissions:
+  mfautorestart.admin:
+    description: Full access to all MF-AutoRestart commands and settings.
+    default: op
+  mfautorestart.bypass:
+    description: Bypass being redirected or kicked during server restart.
+    default: false

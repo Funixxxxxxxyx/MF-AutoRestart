@@ -1,0 +1,26 @@
+# Maven compilation files
+target/
+*.jar
+*.war
+*.ear
+
+# IDE and Project files
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+.factorypath
+dependency-reduced-pom.xml
+
+# Operating System files
+Thumbs.db
+db.files
+desktop.ini
+.DS_Store
+
+# Local SQLite databases generated during testing
+*.db
+data.db
