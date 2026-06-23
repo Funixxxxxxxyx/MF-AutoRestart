@@ -1,4 +1,4 @@
-# ⏱️ MF-AutoRestart
+# MF-AutoRestart
 
 A lightweight, robust, and highly configurable Paper 1.21.x Minecraft server plugin designed to perform safe and automated restarts. 
 
@@ -6,7 +6,7 @@ MF-AutoRestart handles timezone-aware scheduling, executes customized console co
 
 ---
 
-## ✨ Features
+## Features
 
 * **Timezone-Aware Schedules**: Define automated restart times based on your local timezone (e.g. `Asia/Jakarta`, `America/New_York`, or `UTC`). Supports daily and weekly schedules.
 * **Smart Duration Formats**: Restarts accept verbal time suffixes (e.g. `/ar start 1m20s` or `/ar start 5m`). Screen displays and broadcasts are automatically translated into clean units (e.g., `1m 20s`).
@@ -19,7 +19,7 @@ MF-AutoRestart handles timezone-aware scheduling, executes customized console co
 
 ---
 
-## 🛠️ Commands & Permissions
+## Commands & Permissions
 
 All commands require the `mfautorestart.admin` permission node (defaults to server operators).
 
@@ -40,7 +40,7 @@ All commands require the `mfautorestart.admin` permission node (defaults to serv
 
 ---
 
-## ⚙️ Configuration (`config.yml`)
+## Configuration (`config.yml`)
 
 The default configuration file generated in `plugins/MF-AutoRestart/config.yml`:
 
@@ -90,7 +90,7 @@ pre-restart-commands:
 
 ---
 
-## 📈 PlaceholderAPI (PAPI) Placeholders
+## PlaceholderAPI (PAPI) Placeholders
 
 Use these variables to display countdown details in other plugins:
 
@@ -103,13 +103,13 @@ Use these variables to display countdown details in other plugins:
 
 ---
 
-## 💻 Developer API & Custom Events
+## Developer API & Custom Events
 
 A detailed reference manual for developers can be found in **[API.md](API.md)**.
 
 ---
 
-## 🚀 Installation
+## Installation
 
 1. Download or compile the plugin:
    ```bash
